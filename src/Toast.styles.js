@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions, Platform } from 'react-native';
 
 const colors = {
   black: '#000',
@@ -11,7 +11,7 @@ const colors = {
 export default StyleSheet.create({
   container: {
     backgroundColor: colors.transparent,
-    bottom: 100,
+    bottom: Dimensions.get('screen').height / 2  - 50,
     zIndex: 100,
     position: 'absolute',
     left: 0,
